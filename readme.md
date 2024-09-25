@@ -3,8 +3,6 @@
 
 ## Стартовый проект frontend-kit 🔥
 
-🌏 Cайт : http://codbox.ru
-
 👦   Автор : [ A K ](https://www.instagram.com/webtheory/ "Instagram page")
 
 ## Стартовый репозиторий .
