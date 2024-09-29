@@ -96,11 +96,27 @@ ul{
     }
 }
 
-.nav-header{
-    max-width: 1164px;
-    margin-top: 25px;
-    margin-bottom: 50px;
+.custom-navbar{
+    padding: 25px 0 39px;
+    navbar-brand{
+        margin: 0;
+    }
+    .nav-item{
+        .nav-link{
+            padding: 12px 23px;
+            margin-top: 4px;
+            color: #fff;
+            &:hover{
+                text-decoration: none;
+                color: $primary-color;
+            }
+        }
+    }
 }
+.container{
+    max-width: 1140px + 12px + 12px;
+}
+
 
 footer {
     margin-top: auto;
