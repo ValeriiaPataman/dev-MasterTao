@@ -1,11 +1,11 @@
 .banner {
-    padding: 0 12px;
     .container {
         min-height: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        padding: 0 12px 63px;
     }
 
     &-title {
@@ -26,18 +26,17 @@
     }
 
     .swiper-slide {
-        border-radius: 20px;
-        padding: 0 132px;
+
         background-position: center;
     }
 
     .swiper-button-prev,
     .swiper-button-next{
-        max-width: 1623px;
+        max-width: 1602px;
         padding: 0 50px;
         width: 100%;
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, 22px);
         justify-content: flex-start;
         color: #fff;
         height: 0;
