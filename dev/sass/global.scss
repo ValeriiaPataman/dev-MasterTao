@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -8,25 +8,27 @@ body{
     font-size: $fs;
 }
 
-a{
+a {
     color: $primary-color;
     text-decoration: none;
-    &:hover{
+
+    &:hover {
         text-decoration: underline;
     }
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-ul{
-    li{
+ul {
+    li {
         position: relative;
-        &:not([class]){
-            &::before{
+
+        &:not([class]) {
+            &::before {
                 content: "";
                 position: absolute;
                 width: 12px;
@@ -41,15 +43,15 @@ ul{
     }
 }
 
-.dropdown-menu{
-    >li{
-        &::before{
+.dropdown-menu {
+    >li {
+        &::before {
             display: none;
         }
     }
 }
 
-.btn{
+.btn {
     font-size: 15px;
     line-height: 22px;
     font-weight: 600;
@@ -57,49 +59,86 @@ ul{
     padding: 13px 26px;
     color: $color;
     border: 1px solid $primary-color;
-    &:hover{
+
+    &:hover {
         text-decoration: none;
         border: 1px solid $primary-color;
     }
 
-    &.btn-primary{
+    &.btn-primary {
         background-color: $primary-color;
-        &:hover{
+
+        &:hover {
             background-color: transparent;
         }
     }
-    
-    &.btn-secondary{
+
+    &.btn-secondary {
         background-color: transparent;
-        &:hover{
+
+        &:hover {
             background-color: $primary-color;
         }
     }
 
     &.btn-primary,
-    &.btn-secondary{
-        &:active{
+    &.btn-secondary {
+        &:active {
             background-color: $secondary-color;
-            border: 1px solid $secondary-color; 
+            border: 1px solid $secondary-color;
         }
     }
-    
-    &.btn-lg{
+
+    &.btn-lg {
         padding: 19px 24px;
         font-size: 16px;
     }
 
-    img{
+    img {
         margin-left: 46px;
         height: 27px;
         width: 27px;
     }
 }
 
-.container{
+.container {
     max-width: 1140px + 12px + 12px;
 }
 
 footer {
     margin-top: auto;
+}
+
+
+.container-xxl {
+    width: 100%;
+    max-width: 1820px;
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    opacity: 1;
+    background-color: transparent;
+
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 13px;
+}
+
+.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    line-height: 0;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 43px;
 }
